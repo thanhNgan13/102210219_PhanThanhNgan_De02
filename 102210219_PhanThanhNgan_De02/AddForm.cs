@@ -78,7 +78,15 @@ namespace _102210219_PhanThanhNgan_De02
         private void comboBoxMATHANG_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxNHASX.Items.Clear();
-            comboBoxNHASX.Items.AddRange(getNhaSX(comboBoxMATHANG.SelectedItem.ToString()).ToArray());
+            if (comboBoxMATHANG.SelectedIndex == -1)
+            {
+                comboBoxNHASX.SelectedIndex = -1;
+
+            }
+            else
+            {
+                comboBoxNHASX.Items.AddRange(getNhaSX(comboBoxMATHANG.SelectedItem.ToString()).ToArray());
+            }
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
@@ -111,8 +119,8 @@ namespace _102210219_PhanThanhNgan_De02
                         {
                             textBoxMASANPHAM.Text = "";
                             textBoxTENSANPHAM.Text = "";
-                            comboBoxMATHANG.SelectedIndex = -1;
                             comboBoxNHASX.SelectedIndex = -1;
+                            comboBoxMATHANG.SelectedIndex = -1;
                             radioButtonCONHANG.Checked = false;
                             radioButtonHETHANG.Checked = false;
                         }

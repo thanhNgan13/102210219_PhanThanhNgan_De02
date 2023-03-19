@@ -59,6 +59,7 @@
             this.TenMatHang,
             this.TinhTrang});
             this.dataGridView1.Location = new System.Drawing.Point(28, 12);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
