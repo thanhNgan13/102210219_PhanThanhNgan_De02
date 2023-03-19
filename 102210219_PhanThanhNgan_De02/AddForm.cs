@@ -83,9 +83,9 @@ namespace _102210219_PhanThanhNgan_De02
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            if(textBoxMASANPHAM.Text == null || textBoxTENSANPHAM.Text == null
+            if (textBoxMASANPHAM.Text == null || textBoxTENSANPHAM.Text == null
                 || comboBoxMATHANG.SelectedItem == null || comboBoxNHASX.SelectedItem == null
-                || (radioButtonCONHANG.Checked == false && radioButtonHETHANG.Checked == false) || textBoxMASANPHAM.Text.Length != 4)
+                || (radioButtonCONHANG.Checked == false && radioButtonHETHANG.Checked == false) || textBoxMASANPHAM.Text.Length != 4 )
             {
                 MessageBox.Show("Chưa nhập thông tin hoặc thông tin nhập chưa chuẩn xác");
 
