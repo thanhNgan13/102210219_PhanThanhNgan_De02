@@ -32,7 +32,6 @@ namespace _102210219_PhanThanhNgan_De02
                 cnn.Open();
                 SqlCommand cmd = new SqlCommand(query, cnn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
-
                 da.Fill(dt);
             }
             catch (Exception ex)
