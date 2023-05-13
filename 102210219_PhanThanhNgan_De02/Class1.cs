@@ -10,5 +10,8 @@ namespace _102210219_PhanThanhNgan_De02
     {
 
         MainForm form1;
+        {
+            DataProvider provider= new DataProvider();
+            AddForm f = new AddForm();
     }
 }
